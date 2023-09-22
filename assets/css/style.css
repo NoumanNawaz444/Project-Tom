@@ -357,7 +357,7 @@ nav .get_involved::before{
         font-size: .6rem;
     }
     .get_incliSe  hr{
-        margin-bottom: 20px;
+        margin: 10px  auto !important ;
     }
 }
 
