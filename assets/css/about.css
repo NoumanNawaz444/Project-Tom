@@ -519,4 +519,21 @@ video{
         min-width: 100%;
         max-width: 100%;
     }
+    .Why_us_cards{
+        width: 100%;
+        padding: 20px;
+    }
+    .Why_us_cards .card img{
+        width: 289px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:420px) {
+    .Why_us_cards .card img{
+        width: 220px;
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
