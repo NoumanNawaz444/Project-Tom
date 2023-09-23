@@ -461,6 +461,7 @@ video{
     width: 100%;
     margin-bottom: 20px;
     position: relative;
+    font-size: 3rem;
 }
 .why_us h1 span{
     position: relative;
@@ -478,6 +479,7 @@ video{
 }
 .why_us p{
     margin: 10px auto;
+    font-size: 1.2rem;
 }
 @media screen and (max-width:420px) {
     .why_us{
@@ -503,6 +505,7 @@ video{
     justify-content: center;
     align-items: center;
 }
+
 .Why_us_cards .card:nth-child(1){
     padding: 10px;
 }
@@ -536,4 +539,143 @@ video{
         height: auto;
     }
     
+}
+
+/* key_streams */
+
+.key_streams{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 40px 20px;
+    margin: 60px auto;
+    margin-bottom: 10px;
+}
+
+.key_streams .content{
+    width: calc(30% - 40px);
+    margin: 20px;
+    text-align: center;
+}
+.key_streams .content h1{
+    margin-bottom: 50px;
+}
+.key_streams .content h1 span{
+    position: relative;
+}
+.key_streams .content h1 span::before{
+    content:'';
+    height: 5px;
+    border-radius: 100px;
+    width: 70%;
+    left: 15%;
+    bottom: -7px;
+    background: white;
+    position: absolute;
+}
+.key_streams .content h3{
+    margin-bottom: 10px ;
+}
+.key_streams .content p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.key_streams .card_section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+    width: calc(70% - 20px);
+}
+.key_streams .card_section .card{
+    min-width: calc(100% / 3 - 20px) ;
+    max-width: calc(100% / 3 - 20px) ;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 0;
+    border-right: 5px solid white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center !important;
+    flex-wrap: wrap;
+    /* height: 600px; */
+}
+.key_streams .card_section .card::before{
+    content: '';
+    height: 80px ;
+    width: 80px ;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    background: #507167;
+    border-radius: 50%;
+}
+.key_streams .card_section .card:nth-child(2):before{
+    background: #888079;
+}
+.key_streams .card_section .card:nth-child(3):before{
+    background: #3197E1;
+}
+.key_streams .card_section .card:nth-child(4):before{
+    background: #600E49;
+}
+.key_streams .card_section .card:nth-child(5):before{
+    background: #CB8E18;
+}
+.key_streams .card_section .card:nth-child(6):before{
+    background: #C21066;
+}
+.key_streams .card_section .card h1{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1150px) {
+    .key_streams .card_section .card{
+        min-width: calc(100% / 2 - 50px) ;
+        max-width: calc(100% / 2 - 50px) ;
+    }
+    .key_streams .content{
+        width: 30%;
+    }
+}
+@media screen and (max-width:895px) {
+    .key_streams .card_section .card h1{
+        font-size: 1.5rem ;
+    }
+}
+@media screen and (max-width:780px) {
+    .key_streams{
+        flex-wrap: wrap;
+    }
+    .key_streams .content{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .key_streams .content p{
+        margin: 0;
+        text-align: left;
+    }
+    .key_streams .card_section{
+        width: 100%;
+        padding-left: 0;
+    }
+    .key_streams .card_section .card h1{
+        font-size: 1.3rem;
+    }
+    .key_streams .card_section .card p{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width:469px) {
+    .key_streams .card_section .card{
+        min-width: calc(100% / 1 - 60px) ;
+        max-width: calc(100% / 1 - 60px) ;
+    }
 }
