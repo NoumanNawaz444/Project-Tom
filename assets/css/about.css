@@ -440,8 +440,9 @@ nav .get_involved::before{
 video{
     width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 10px auto;
 }
+
 
 
 /* why_us */
@@ -459,6 +460,21 @@ video{
 .why_us h1{
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
+}
+.why_us h1 span{
+    position: relative;
+}
+.why_us h1 span::before{
+    content: '';
+    height: 6px;
+    width: 30%;
+    position: absolute;
+    bottom: -6px;
+    background: black;
+    margin: auto;
+    left: 35%;
+    border-radius: 100px;
 }
 .why_us p{
     margin: 10px auto;
